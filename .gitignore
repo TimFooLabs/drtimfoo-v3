@@ -44,3 +44,4 @@ next-env.d.ts
 convex/*.js
 convex/*.d.ts
 convex/_generated/
+.convex-out/
