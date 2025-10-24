@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": "user_test_1761228776",
+    "email_addresses": [
+      {
+        "email_address": "test-1761228776@example.com",
+        "id": "idn_1761228776",
+        "object": "email_address",
+        "verification": { "status": "verified", "strategy": "ticket" }
+      }
+    ],
+    "first_name": "Webhook",
+    "last_name": "Test",
+    "created_at": 1761228776000,
+    "updated_at": 1761228776000,
+    "object": "user"
+  },
+  "object": "event",
+  "type": "user.created",
+  "timestamp": 1761228776000
+}

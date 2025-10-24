@@ -3,7 +3,7 @@ import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  reactCompiler: true,
+  // reactCompiler: true,
   experimental: {
     // turbopack config moved to separate file or other location in Next.js 16
   },

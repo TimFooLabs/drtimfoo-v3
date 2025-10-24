@@ -1,21 +1,20 @@
-import { getAuth } from '@clerk/nextjs/server'
+import { auth } from '@clerk/nextjs/server'
 import { ConvexHttpClient } from 'convex/browser'
 import { api } from '../../../convex/_generated/api'
 import { env } from '../env'
-import { NextRequest } from 'next/server'
 
 const client = new ConvexHttpClient(env.NEXT_PUBLIC_CONVEX_URL)
 
-export async function getServerUser(request: NextRequest) {
-  const { userId } = getAuth(request)
+export async function getServerUser() {
+  const { userId } = await auth()
   
   if (!userId) return null
 
   return await client.query(api.users.getByClerkId, { clerkId: userId })
 }
 
-export async function requireServerUser(request: NextRequest) {
-  const user = await getServerUser(request)
+export async function requireServerUser() {
+  const user = await getServerUser()
   
   if (!user) {
     throw new Error('Unauthorized')
@@ -24,8 +23,8 @@ export async function requireServerUser(request: NextRequest) {
   return user
 }
 
-export async function requireAdmin(request: NextRequest) {
-  const { userId } = getAuth(request)
+export async function requireAdmin() {
+  const { userId } = await auth()
   
   if (!userId) {
     throw new Error('Unauthorized')

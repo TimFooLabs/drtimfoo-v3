@@ -1,0 +1,9 @@
+{
+  "type": "user.created",
+  "data": {
+    "id": "user_test_webhook_1761242712",
+    "email_address": ["webhook@example.com"],
+    "first_name": "Webhook",
+    "last_name": "Test"
+  }
+}

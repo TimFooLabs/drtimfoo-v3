@@ -1,0 +1,93 @@
+/*
+ * ⚠️ REFERENCE ONLY ⚠️
+ *
+ * This file has been merged into globals.css for better organization.
+ * The typography tokens are now available in globals.css under:
+ *   - Typography Tokens section (lines ~50-130 in globals.css)
+ *   - Font family set to Cabin (line ~7 in globals.css)
+ *
+ * Keeping this file for reference during development.
+ * Original content preserved below for historical context.
+ */
+
+/* Fluid Typography with CSS clamp() */
+:root {
+  /* Font Family */
+  --font-family: Cabin, sans-serif;
+
+  /* Type Scale */
+  --display-lg-size: clamp(1.96rem, calc(1.58rem + 1.91vw), 3.01rem);
+  --display-lg-weight: 800;
+  --display-lg-line-height: 1.6;
+  --display-lg-letter-spacing: 0.015em;
+
+  --display-md-size: clamp(1.8rem, calc(1.5rem + 1.49vw), 2.62rem);
+  --display-md-weight: 800;
+  --display-md-line-height: 1.6;
+  --display-md-letter-spacing: 0.015em;
+
+  --h1-size: clamp(1.66rem, calc(1.43rem + 1.14vw), 2.28rem);
+  --h1-weight: 700;
+  --h1-line-height: 1.6;
+  --h1-letter-spacing: 0.02em;
+
+  --h2-size: clamp(1.4rem, calc(1.28rem + 0.61vw), 1.73rem);
+  --h2-weight: 600;
+  --h2-line-height: 1.6;
+  --h2-letter-spacing: 0.02em;
+
+  --h3-size: clamp(1.29rem, calc(1.2rem + 0.41vw), 1.51rem);
+  --h3-weight: 600;
+  --h3-line-height: 1.6;
+  --h3-letter-spacing: 0.025em;
+
+  --h4-size: clamp(1.18rem, calc(1.13rem + 0.24vw), 1.32rem);
+  --h4-weight: 500;
+  --h4-line-height: 1.6;
+  --h4-letter-spacing: 0.025em;
+
+  --h5-size: clamp(1.13rem, calc(1.1rem + 0.17vw), 1.23rem);
+  --h5-weight: 500;
+  --h5-line-height: 1.6;
+  --h5-letter-spacing: 0.03em;
+
+  --h6-size: clamp(1.09rem, calc(1.07rem + 0.11vw), 1.15rem);
+  --h6-weight: 500;
+  --h6-line-height: 1.6;
+  --h6-letter-spacing: 0.03em;
+
+  --body-xl-size: clamp(1.04rem, calc(1.03rem + 0.05vw), 1.07rem);
+  --body-xl-weight: 400;
+  --body-xl-line-height: 1.6;
+  --body-xl-letter-spacing: 0.03em;
+
+  --body-size: clamp(1rem, calc(1rem + 0vw), 1rem);
+  --body-weight: 400;
+  --body-line-height: 1.6;
+  --body-letter-spacing: 0.03em;
+
+  --body-sm-size: clamp(0.96rem, calc(0.97rem + -0.05vw), 0.93rem);
+  --body-sm-weight: 400;
+  --body-sm-line-height: 1.7;
+  --body-sm-letter-spacing: 0.03em;
+
+  --caption-lg-size: clamp(0.92rem, calc(0.94rem + -0.09vw), 0.87rem);
+  --caption-lg-weight: 400;
+  --caption-lg-line-height: 1.7;
+  --caption-lg-letter-spacing: 0.03em;
+
+  --caption-size: clamp(0.88rem, calc(0.91rem + -0.12vw), 0.81rem);
+  --caption-weight: 400;
+  --caption-line-height: 1.7;
+  --caption-letter-spacing: 0.03em;
+
+  --caption-sm-size: clamp(0.85rem, calc(0.88rem + -0.16vw), 0.76rem);
+  --caption-sm-weight: 300;
+  --caption-sm-line-height: 1.7;
+  --caption-sm-letter-spacing: 0.03em;
+
+  --overline-size: clamp(0.81rem, calc(0.85rem + -0.18vw), 0.71rem);
+  --overline-weight: 500;
+  --overline-line-height: 1.7;
+  --overline-letter-spacing: 0.03em;
+}

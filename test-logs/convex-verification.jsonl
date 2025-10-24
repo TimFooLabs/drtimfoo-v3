@@ -1,0 +1,24 @@
+{
+                "timestamp": 1761228102,
+                "clerk_id": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW",
+                "verification": "failed",
+                "user_data": Getting user by Clerk ID: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+Querying Convex: users.getByClerkId {"clerkId": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW"}
+Error: Failed to query Convex. Make sure Convex dev server is running.
+            }
+{
+                "timestamp": 1761228778,
+                "clerk_id": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW",
+                "verification": "failed",
+                "user_data": Getting user by Clerk ID: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+Querying Convex: users.getByClerkId {"clerkId": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW"}
+Error: Failed to query Convex. Make sure Convex dev server is running.
+            }
+{
+                "timestamp": 1761259524,
+                "clerk_id": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW",
+                "verification": "failed",
+                "user_data": Getting user by Clerk ID: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+Querying Convex: users.getByClerkId {"clerkId": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW"}
+Error: Failed to query Convex. Make sure Convex dev server is running.
+            }

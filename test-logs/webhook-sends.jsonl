@@ -1,0 +1,60 @@
+{
+  "timestamp": 1761216224,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761216224",
+  "http_status": 400,
+  "signature": "v1,exampleFailedSignature1234567890=",
+  "payload_file": "test-payloads/user_created_1761216224.json",
+  "response_body": "Error: Verification failed"
+}
+{
+  "timestamp": 1761217203,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761217203",
+  "http_status": 400,
+  "signature": "v1,exampleFailedSignatureABCDEFGHIJ=",
+  "payload_file": "test-payloads/user_created_1761217203.json",
+  "response_body": "Error: Timestamp outside tolerance"
+}
+{
+  "timestamp": 1761225830,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761225830",
+  "http_status": 400,
+  "signature": "v1,obeDmbw32aYiH/hoJM8u9pYPgwTacLbGCKqayBqouqc=",
+  "payload_file": "test-payloads/user_created_1761225830.json",
+  "response_body": "Error: Verification failed"
+}
+{
+  "timestamp": 1761225973,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761225973",
+  "http_status": 200,
+  "signature": "v1,eVdof+DHSjmSc5IDNZ5u/XjexFgvfH4E1RUXkCrIa9c=",
+  "payload_file": "test-payloads/user_created_1761225973.json",
+  "response_body": "Webhook processed"
+}
+{
+  "timestamp": 1761228100,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761228100",
+  "http_status": 200,
+  "signature": "v1,Tzdqe/Zy4Uc3w0qtWfoT324R3GRI60ikqnjyDZwYGao=",
+  "payload_file": "test-payloads/user_created_1761228100.json",
+  "response_body": "Webhook processed"
+}
+{
+  "timestamp": 1761228776,
+  "event_type": "user.created",
+  "url": "http://localhost:3000/api/webhooks/clerk",
+  "msg_id": "msg_1761228776",
+  "http_status": 200,
+  "signature": "v1,v0hvCJnGEiT5f2kUnNjBbfOHFxTRILViScCWpLHXtm8=",
+  "payload_file": "test-payloads/user_created_1761228776.json",
+  "response_body": "Webhook processed"
+}

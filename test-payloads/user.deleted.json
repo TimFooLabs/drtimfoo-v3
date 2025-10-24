@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "user_test_12345",
+    "object": "user",
+    "deleted": true
+  },
+  "object": "event",
+  "type": "user.deleted",
+  "timestamp": 1654012791835
+}

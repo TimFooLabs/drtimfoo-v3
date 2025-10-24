@@ -1,0 +1,37 @@
+{
+  "data": {
+    "id": "user_test_12345",
+    "email_addresses": [
+      {
+        "email_address": "test@example.com",
+        "id": "idn_test_12345",
+        "linked_to": [],
+        "object": "email_address",
+        "verification": {
+          "status": "verified",
+          "strategy": "ticket"
+        }
+      }
+    ],
+    "first_name": "Test",
+    "last_name": "User",
+    "created_at": 1654012591514,
+    "updated_at": 1654012591835,
+    "object": "user",
+    "password_enabled": true,
+    "phone_numbers": [],
+    "primary_email_address_id": "idn_test_12345",
+    "primary_phone_number_id": null,
+    "primary_web3_wallet_id": null,
+    "private_metadata": {},
+    "profile_image_url": "https://www.gravatar.com/avatar?d=mp",
+    "public_metadata": {},
+    "two_factor_enabled": false,
+    "unsafe_metadata": {},
+    "username": null,
+    "web3_wallets": []
+  },
+  "object": "event",
+  "type": "user.created",
+  "timestamp": 1654012591835
+}

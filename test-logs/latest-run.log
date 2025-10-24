@@ -1,0 +1,10 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+[1;34m[INFO][0m Starting Clerk Webhook Integration Test Suite
+==============================================
+[1;34m[INFO][0m Checking if Next.js server is running at http://localhost:3000 ...
+[1;32m[SUCCESS][0m Next.js server is reachable at http://localhost:3000
+[1;34m[INFO][0m Checking if Convex backend is running at https://dashing-hawk-98.convex.cloud ...
+[1;32m[SUCCESS][0m Convex backend is reachable at https://dashing-hawk-98.convex.cloud
+
+[1;34m[INFO][0m Running test: User creation ...
+[1;32m[SUCCESS][0m User creation passed

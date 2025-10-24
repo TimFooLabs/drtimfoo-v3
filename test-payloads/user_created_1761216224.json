@@ -1,0 +1,25 @@
+{
+    "data": {
+        "id": "user_34SmPsuJKeEsN9wBEmwt5eXjAOW",
+        "email_addresses": [
+            {
+                "email_address": "test-run-1761215327@example.com",
+                "id": "idn_1761216224",
+                "linked_to": [],
+                "object": "email_address",
+                "verification": {
+                    "status": "verified",
+                    "strategy": "ticket"
+                }
+            }
+        ],
+        "first_name": "Test",
+        "last_name": "User",
+        "created_at": 1761216224000,
+        "updated_at": 1761216224000,
+        "object": "user"
+    },
+    "object": "event",
+    "type": "user.created",
+    "timestamp": 1761216224000
+}

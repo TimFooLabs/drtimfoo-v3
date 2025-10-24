@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "sess_test_12345",
+    "user_id": "user_test_12345",
+    "status": "active",
+    "expire_at": 1654016191835,
+    "abandon_at": null,
+    "last_active_at": 1654012591835,
+    "created_at": 1654012591835,
+    "updated_at": 1654012591835,
+    "object": "session",
+    "client_id": "client_test_12345",
+    "actor": null
+  },
+  "object": "event",
+  "type": "session.created",
+  "timestamp": 1654012591835
+}

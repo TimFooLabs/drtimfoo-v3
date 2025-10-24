@@ -1,5 +1,12 @@
 # drtimfoo-v3 UI Delivery Plan (Production-Ready, AI-Assisted Solo Development)
 
+## 📋 Documentation Updates
+
+> **Important**: During implementation, several technical issues were discovered and resolved that differ from the original plan below. For accurate current configuration details and troubleshooting guides, see:
+> - [`docs/convex-setup-notes.md`](./convex-setup-notes.md) - Complete setup documentation with implementation details
+> - [`tsconfig.json`](../../tsconfig.json) - Actual TypeScript configuration (excludes `"convex"`)
+> - [`convex/tsconfig.json`](../../convex/tsconfig.json) - Convex-specific compilation settings
+
 ## Tech Stack & Foundations
 
 ### Core Technologies
@@ -292,6 +299,7 @@ NEXT_PUBLIC_CONVEX_URL=
 # Clerk
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
+CLERK_WEBHOOK_SIGNING_SECRET=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
@@ -319,6 +327,11 @@ const envSchema = z.object({
   NEXT_PUBLIC_CONVEX_URL: z.string().url(),
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1),
   CLERK_SECRET_KEY: z.string().min(1),
+  CLERK_WEBHOOK_SIGNING_SECRET: z.string().min(1),
+  NEXT_PUBLIC_CLERK_SIGN_IN_URL: z.string().min(1),
+  NEXT_PUBLIC_CLERK_SIGN_UP_URL: z.string().min(1),
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL: z.string().min(1),
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL: z.string().min(1),
 })
 
 export const env = envSchema.parse({
@@ -327,6 +340,11 @@ export const env = envSchema.parse({
   NEXT_PUBLIC_CONVEX_URL: process.env.NEXT_PUBLIC_CONVEX_URL,
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
   CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY,
+  CLERK_WEBHOOK_SIGNING_SECRET: process.env.CLERK_WEBHOOK_SIGNING_SECRET,
+  NEXT_PUBLIC_CLERK_SIGN_IN_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL,
+  NEXT_PUBLIC_CLERK_SIGN_UP_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_UP_URL,
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL: process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL,
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL: process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL,
 })
 ```
 
@@ -481,8 +499,7 @@ drtimfoo-v3/
 │   │   │   ├── hooks.ts
 │   │   │   └── server.ts
 │   │   ├── clerk/
-│   │   │   ├── auth.ts
-│   │   │   └── middleware.ts
+│   │   │   └── auth.ts
 │   │   ├── utils/
 │   │   │   ├── cn.ts
 │   │   │   ├── format.ts
@@ -492,7 +509,7 @@ drtimfoo-v3/
 │   │   └── constants.ts
 │   ├── styles/
 │   │   └── globals.css
-│   └── middleware.ts
+│   └── proxy.ts
 ├── shared-modules/
 │   ├── components/
 │   │   ├── booking-widget/
@@ -1490,7 +1507,7 @@ export function useIsAdmin(clerkId: string | undefined) {
 
 **`src/lib/convex/server.ts`:**
 ```typescript
-import { auth } from '@clerk/nextjs'
+import { auth } from '@clerk/nextjs/server'
 import { ConvexHttpClient } from 'convex/browser'
 import { api } from '../../../convex/_generated/api'
 import { env } from '../env'
@@ -1498,7 +1515,7 @@ import { env } from '../env'
 const client = new ConvexHttpClient(env.NEXT_PUBLIC_CONVEX_URL)
 
 export async function getServerUser() {
-  const { userId } = auth()
+  const { userId } = await auth()
   
   if (!userId) return null
 
@@ -1516,7 +1533,7 @@ export async function requireServerUser() {
 }
 
 export async function requireAdmin() {
-  const { userId } = auth()
+  const { userId } = await auth()
   
   if (!userId) {
     throw new Error('Unauthorized')
@@ -1532,34 +1549,58 @@ export async function requireAdmin() {
 }
 ```
 
+**Note on Clerk Server API:**
+- Uses the new `auth()` function from `@clerk/nextjs/server` (Next.js 16 compatible)
+- No longer requires passing the request object as a parameter
+- Functions implement async/await pattern for consistent error handling
+
 ---
 
 ## Authentication & Middleware
 
 ### Clerk Integration
 
-**`src/middleware.ts`:**
+**`src/proxy.ts` (Next.js 16 Proxy Middleware):**
 ```typescript
-import { authMiddleware } from '@clerk/nextjs'
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 
-export default authMiddleware({
-  publicRoutes: [
-    '/',
-    '/about',
-    '/services',
-    '/blog(.*)',
-    '/contact',
-    '/api/webhooks(.*)',
-  ],
-  ignoredRoutes: [
-    '/api/health',
-  ],
+const isPublicRoute = createRouteMatcher([
+  '/',
+  '/about',
+  '/services',
+  '/blog(.*)',
+  '/contact',
+  '/api/webhooks(.*)',
+])
+
+const isIgnoredRoute = createRouteMatcher([
+  '/api/health',
+])
+
+export default clerkMiddleware(async (auth, req) => {
+  if (isIgnoredRoute(req)) {
+    return
+  }
+  
+  if (!isPublicRoute(req)) {
+    const session = await auth()
+    if (!session.userId) {
+      return Response.redirect(new URL('/sign-in', req.url))
+    }
+  }
 })
 
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 }
 ```
+
+**Note on Next.js 16 Architecture:**
+- The middleware is implemented in `src/proxy.ts` instead of the traditional `middleware.ts`
+- This is a requirement for Next.js 16 App Router compatibility
+- Uses `clerkMiddleware` with `createRouteMatcher` from `@clerk/nextjs/server`
+- Implements async/await pattern for authentication checks
+- Provides explicit redirect logic for unauthenticated users
 
 ### Clerk Webhook Handler
 
@@ -1575,10 +1616,10 @@ import { env } from '@/lib/env'
 const client = new ConvexHttpClient(env.NEXT_PUBLIC_CONVEX_URL)
 
 export async function POST(req: Request) {
-  const WEBHOOK_SECRET = process.env.CLERK_WEBHOOK_SECRET
+  const WEBHOOK_SECRET = process.env.CLERK_WEBHOOK_SIGNING_SECRET
 
   if (!WEBHOOK_SECRET) {
-    throw new Error('Please add CLERK_WEBHOOK_SECRET to .env')
+    throw new Error('Please add CLERK_WEBHOOK_SIGNING_SECRET to .env')
   }
 
   const headerPayload = headers()
@@ -1623,6 +1664,27 @@ export async function POST(req: Request) {
   return new Response('Webhook processed', { status: 200 })
 }
 ```
+
+#### Historical Note: Webhook Signature Verification Fixes
+
+During implementation, we encountered and resolved critical issues with Svix webhook signature verification:
+
+**Root Cause**:
+- JSON formatting inconsistencies between test payloads and Clerk's actual webhook format
+- Missing trailing newlines in payloads (Svix signatures are sensitive to exact whitespace)
+- Lack of timestamp validation leading to potential replay attacks
+
+**Key Fixes Applied**:
+1. **Raw Body Processing**: Updated handler to use `arrayBuffer` instead of JSON parsing to preserve exact formatting
+2. **Automatic Newline Handling**: Added logic to ensure payloads end with newline character as required by Svix
+3. **Timestamp Tolerance Validation**: Implemented 5-minute tolerance check for webhook timestamps
+4. **Enhanced Error Logging**: Added detailed logging for debugging verification failures
+5. **Test Suite Improvements**: Created debug artifacts (`*_simple.json`, `*_debug_curl.sh`) for consistent testing
+
+**Lessons Learned**:
+- Svix verification requires exact byte-for-byte payload matching
+- Webhook security requires both signature verification and timestamp validation
+- Comprehensive debug artifacts are essential for troubleshooting webhook integrations
 
 ---
 

@@ -1,0 +1,1109 @@
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[ERROR] Clerk API error: Request body invalid
+{"errors":[{"message":"Request body invalid","long_message":"The request body is invalid. Please consult the API documentation for more information.","code":"request_body_invalid"}],"clerk_trace_id":"44de1be1042fa8635e574e5f117fbc8d"}
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[INFO] Creating session for user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[SUCCESS] Created session: sess_34TE9lWJf74yaV9XdglrxTlIMgG
+[INFO] Fetching session token for sess_34TE9lWJf74yaV9XdglrxTlIMgG
+[WARN] No active token found — retrying...
+[ERROR] Session token still not available.
+{"object":"session","id":"sess_34TE9lWJf74yaV9XdglrxTlIMgG","client_id":"client_34TE9pJypFat8uIeVuV5Fds73To","user_id":"user_34SmPsuJKeEsN9wBEmwt5eXjAOW","status":"active","actor":null,"last_active_at":1761229012750,"expire_at":1761833812750,"abandon_at":1763821012750,"created_at":1761229012750,"updated_at":1761229012750}
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[ERROR] Clerk API error: Request body invalid
+{"errors":[{"message":"Request body invalid","long_message":"The request body is invalid. Please consult the API documentation for more information.","code":"request_body_invalid"}],"clerk_trace_id":"b7d5fc132397e542040a2cbf2699856d"}
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[INFO] Creating session for user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[SUCCESS] Created session: sess_34TFsY7cU2VXVYeAEkrumh6VTeR
+[INFO] Fetching session token for sess_34TFsY7cU2VXVYeAEkrumh6VTeR
+[WARN] No active token found — retrying...
+[ERROR] Session token still not available.
+{"object":"session","id":"sess_34TFsY7cU2VXVYeAEkrumh6VTeR","client_id":"client_34TFsTzk4JfUnSyRO2pCNvMmiTr","user_id":"user_34SmPsuJKeEsN9wBEmwt5eXjAOW","status":"active","actor":null,"last_active_at":1761229861634,"expire_at":1761834661634,"abandon_at":1763821861634,"created_at":1761229861634,"updated_at":1761229861634}
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[ERROR] Clerk API error: missing data
+{"errors":[{"message":"missing data","long_message":"[\"username\"] data doesn't match user requirements set for this instance","code":"form_data_missing","meta":{"param_names":["username"]}}],"clerk_trace_id":"f9f3dcc5bcca14c2f481614d89db2adf"}
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[INFO] Creating session for user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[SUCCESS] Created session: sess_34TGML7YktyLMMpMNqnBDACUwn7
+[INFO] Fetching session token for sess_34TGML7YktyLMMpMNqnBDACUwn7
+[WARN] No active token found — retrying...
+[ERROR] Session token still not available.
+{"object":"session","id":"sess_34TGML7YktyLMMpMNqnBDACUwn7","client_id":"client_34TGMJv0IFItHNz0esjADCMTtKb","user_id":"user_34SmPsuJKeEsN9wBEmwt5eXjAOW","status":"active","actor":null,"last_active_at":1761230098621,"expire_at":1761834898621,"abandon_at":1763822098621,"created_at":1761230098621,"updated_at":1761230098621}
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[ERROR] Clerk API error: missing data
+{"errors":[{"message":"missing data","long_message":"[\"username\"] data doesn't match user requirements set for this instance","code":"form_data_missing","meta":{"param_names":["username"]}}],"clerk_trace_id":"0b513cae36cb3c47f7f096cebca99f84"}
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[INFO] Creating session for user_34SmPsuJKeEsN9wBEmwt5eXjAOW
+[SUCCESS] Created session: sess_34TGgkEI6kQj7zcHD2FtHrrQXrM
+[INFO] Fetching session token for sess_34TGgkEI6kQj7zcHD2FtHrrQXrM
+[WARN] No active token found — retrying...
+[ERROR] Session token still not available.
+{"object":"session","id":"sess_34TGgkEI6kQj7zcHD2FtHrrQXrM","client_id":"client_34TGglLARjz9riKO2yNr3jgXieR","user_id":"user_34SmPsuJKeEsN9wBEmwt5eXjAOW","status":"active","actor":null,"last_active_at":1761230261679,"expire_at":1761835061679,"abandon_at":1763822261679,"created_at":1761230261679,"updated_at":1761230261679}
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[SUCCESS] Created user test1@example.com (ID: user_34TGzuxQTPHyU9evWNgYpuQXdB3)
+[INFO] Creating test user: test2@example.com
+[SUCCESS] Created user test2@example.com (ID: user_34TH01R6Ucb4s15AIqNNaB0Aqhq)
+[INFO] Creating test user: test3@example.com
+[SUCCESS] Created user test3@example.com (ID: user_34TH05wclh4A4QwFhwkA7cpbjtZ)
+[INFO] Creating test user: webhook@example.com
+[SUCCESS] Created user webhook@example.com (ID: user_34TH0JCiu0Srna0RkpdqWhEsRQ1)
+[INFO] Creating test user: automation@example.com
+[SUCCESS] Created user automation@example.com (ID: user_34TH0MhvPVwlq8XmfafXF619JPO)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TGzuxQTPHyU9evWNgYpuQXdB3), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TH2qS3ZuZujZkAJIexttpWYBO)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TH01R6Ucb4s15AIqNNaB0Aqhq), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TH36DkJh7aRplcFSdUZpjQtOZ)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TH05wclh4A4QwFhwkA7cpbjtZ), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TH3UTrytZVFqeqFlWph1Zsl0h)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TH0JCiu0Srna0RkpdqWhEsRQ1), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TH3m0CLKWGpUgy6HqiHYyRJIa)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TH0MhvPVwlq8XmfafXF619JPO), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TH3z8OJZJR9cR1CSIMamhjzL6)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TH2qS3ZuZujZkAJIexttpWYBO), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34THCyifxe7DjgyW6KagsQbm0ZR)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TH36DkJh7aRplcFSdUZpjQtOZ), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34THDOJT52xIA7mbFxgkllMw20W)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TH3UTrytZVFqeqFlWph1Zsl0h), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34THDZSzTPXKSSw0t5T8juf7pfz)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TH3m0CLKWGpUgy6HqiHYyRJIa), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34THDrBwEBoV68k9UBYZyim3KoK)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TH3z8OJZJR9cR1CSIMamhjzL6), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34THE8TWazwkFnBRcwUSJBgQX5m)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34THCyifxe7DjgyW6KagsQbm0ZR), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34THS5X2njBcaqdaIZAgJeEkK9Y)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34THDOJT52xIA7mbFxgkllMw20W), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34THSJCpWQ3GaQWtNHxnqqvUeeD)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34THDZSzTPXKSSw0t5T8juf7pfz), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34THSf4nLZwxlsY8I6oL0HzwFWK)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34THDrBwEBoV68k9UBYZyim3KoK), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34THSqyA2szwLGDXBXaOGFmlFpg)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34THE8TWazwkFnBRcwUSJBgQX5m), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34THTLAZkCn1jsDLGNqmEHrf4Ch)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34THS5X2njBcaqdaIZAgJeEkK9Y), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34THeoAV9e3yd4dRt1UFhtWRXD5)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34THSJCpWQ3GaQWtNHxnqqvUeeD), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34THfDi67k8eqkzMa9mcq7fTh8b)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34THSf4nLZwxlsY8I6oL0HzwFWK), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34THfWp0VCpOnrH6qfg0YR5hczn)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34THSqyA2szwLGDXBXaOGFmlFpg), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34THfiO5hupUXw7gXfcpOf1hDFM)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34THTLAZkCn1jsDLGNqmEHrf4Ch), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34THg0PaEdsDXLWKlS5nQnuEZp5)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34THeoAV9e3yd4dRt1UFhtWRXD5), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34THrJiLbiQXqfYP53QFGR3EDqg)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34THfDi67k8eqkzMa9mcq7fTh8b), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34THrWbn2wsrZtQwVwKNcUudLlU)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34THfWp0VCpOnrH6qfg0YR5hczn), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34THrohvKXkgHAU7pCBKHfpuy6U)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34THfiO5hupUXw7gXfcpOf1hDFM), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34THsCfEgZzrdV48vY3afZCG9Xo)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34THg0PaEdsDXLWKlS5nQnuEZp5), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34THsXELmJxZkQmFQBFbOEY5sLB)
+[INFO] All user creation tests completed.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34THrJiLbiQXqfYP53QFGR3EDqg), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TI1AvynPdPRVyPAZkbGtBYAqg)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34THrWbn2wsrZtQwVwKNcUudLlU), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TI1Z7bWnu9UKlgkDdNYzajAqp)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34THrohvKXkgHAU7pCBKHfpuy6U), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TI1rxMoZlycVZJaIPP92rtwkk)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34THsCfEgZzrdV48vY3afZCG9Xo), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TI22jjTuOh6V2olWQVeYNiL5T)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34THsXELmJxZkQmFQBFbOEY5sLB), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TI2LtYQqUqK9h4PX58463F5jj)
+[INFO] All user creation tests completed.
+[DEBUG] Environment loaded for User creation
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TI1AvynPdPRVyPAZkbGtBYAqg), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TIGzXT06fQMCZKO0kWtgmgm2Z)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TI1Z7bWnu9UKlgkDdNYzajAqp), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TIHHpa1j9fDeUumn45uJd0Fbs)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TI1rxMoZlycVZJaIPP92rtwkk), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TIHXM1SLql2zuJl0WbRm0gIqF)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TI22jjTuOh6V2olWQVeYNiL5T), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TIHpASmKD2ePnE6K3lGKqwm2L)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TI2LtYQqUqK9h4PX58463F5jj), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TII4VPbmbmNwHYGZgCa8hk4IA)
+[INFO] All user creation tests completed.
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TIGzXT06fQMCZKO0kWtgmgm2Z), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TIVf7mzTY13rWQ3ynp4fdGAP6)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TIHHpa1j9fDeUumn45uJd0Fbs), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TIVpu1uPLYBr5Hve6ZUKaoSLw)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TIHXM1SLql2zuJl0WbRm0gIqF), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TIW83Xr5yNUz2rqDMvYGrVQ4B)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TIHpASmKD2ePnE6K3lGKqwm2L), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TIWOQbT3dAzsBSapxrag9iYmq)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TII4VPbmbmNwHYGZgCa8hk4IA), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TIWn6T9ZGwPmwfETFEIDnxVuO)
+[INFO] All user creation tests completed.
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.wi3rHcVnf4
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TIVf7mzTY13rWQ3ynp4fdGAP6), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TIlXylUBucFMXUeVKqJLShGjI)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TIVpu1uPLYBr5Hve6ZUKaoSLw), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TIlmeIky16e3VC9FvSBiBMa6N)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TIW83Xr5yNUz2rqDMvYGrVQ4B), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TImExS6VvIx72xShnEIxN4T2q)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TIWOQbT3dAzsBSapxrag9iYmq), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TImRFbW4qrwOF7zIa8v256PT5)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TIWn6T9ZGwPmwfETFEIDnxVuO), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TImllesX2DMYkDH4twUcUSjox)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.zfQ6mukd4o
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TIlXylUBucFMXUeVKqJLShGjI), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TRg2TsYSpGYAD03zzZoZmQK8r)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TIlmeIky16e3VC9FvSBiBMa6N), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TRgDbgbOuz0HvfCSc7t7NWwcs)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TImExS6VvIx72xShnEIxN4T2q), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TRgXhXVkb6UZDdjKbAUvqrgt9)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TImRFbW4qrwOF7zIa8v256PT5), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TRgnWH7wJ7dhVDzzyqHsMtN33)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TImllesX2DMYkDH4twUcUSjox), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TRh9nP7v7vE4NvG8I2CvKKtzP)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.iEqTUjaPZi
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TRh9nP7v7vE4NvG8I2CvKKtzP
+[INFO] Creating session for user_34TRh9nP7v7vE4NvG8I2CvKKtzP
+[SUCCESS] Created session: sess_34TRh7QN1XX7X9L7nGmn87ytwQ1
+[INFO] Fetching session token for sess_34TRh7QN1XX7X9L7nGmn87ytwQ1
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.37XAAy2RW1
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TRg2TsYSpGYAD03zzZoZmQK8r), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TRzaUKzddG4vKagtvcmKwZqds)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TRgDbgbOuz0HvfCSc7t7NWwcs), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TRzvlGFXm7JAod1gROUp1BIzM)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TRgXhXVkb6UZDdjKbAUvqrgt9), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TS09ftLCg5tN0QVk2wrC4LO0X)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TRgnWH7wJ7dhVDzzyqHsMtN33), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TS0PgY2J9oqm6DGOmmPkFIGoh)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TRh9nP7v7vE4NvG8I2CvKKtzP), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TS0k0bQjZJ5vFI9bnVPqoik9T)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.VIVVASlaAL
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TS0k0bQjZJ5vFI9bnVPqoik9T
+[INFO] Creating session for user_34TS0k0bQjZJ5vFI9bnVPqoik9T
+[SUCCESS] Created session: sess_34TS0pkLfCRhWs9wTUS8EgbnNEM
+[INFO] Fetching session token for sess_34TS0pkLfCRhWs9wTUS8EgbnNEM
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.ZhhOAon3iA
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TRzaUKzddG4vKagtvcmKwZqds), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TSYr2DUw0rEBGnIcqStQc0Oh0)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TRzvlGFXm7JAod1gROUp1BIzM), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TSZ58HFVghwx6TVmaJudW4QAG)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TS09ftLCg5tN0QVk2wrC4LO0X), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TSZKEdQf3yDzQSFPXLNLK3p67)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TS0PgY2J9oqm6DGOmmPkFIGoh), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TSZccbzqSUvhT3xEKGofEwkjW)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TS0k0bQjZJ5vFI9bnVPqoik9T), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TSZskkU9yGEznhaMtctMjTxZm)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.r24jgQjV6U
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TSZskkU9yGEznhaMtctMjTxZm
+[INFO] Creating session for user_34TSZskkU9yGEznhaMtctMjTxZm
+[SUCCESS] Created session: sess_34TSZxEO80Fhhrpj9EIYELBesUK
+[INFO] Fetching session token for sess_34TSZxEO80Fhhrpj9EIYELBesUK
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.o9AcLakbeq
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TSYr2DUw0rEBGnIcqStQc0Oh0), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TftvRxd6yfXPb9QmpC9Ek4Xlx)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TSZ58HFVghwx6TVmaJudW4QAG), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34Tfu9RCcDNrd0od2gSrz18bwVK)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TSZKEdQf3yDzQSFPXLNLK3p67), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TfuYnDjxuUHqg5sUjxcs8phPX)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TSZccbzqSUvhT3xEKGofEwkjW), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34Tfuq39XdUTxNdyI9mMCWQwcUw)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TSZskkU9yGEznhaMtctMjTxZm), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34Tfv2ESGDjrXiZDUEgzeygV6gL)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.11p29vyDPX
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34Tfv2ESGDjrXiZDUEgzeygV6gL
+[INFO] Creating session for user_34Tfv2ESGDjrXiZDUEgzeygV6gL
+[SUCCESS] Created session: sess_34TfvEeK3UQHIPRb9fQnOlUqeOz
+[INFO] Fetching session token for sess_34TfvEeK3UQHIPRb9fQnOlUqeOz
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.UMgcOBBYi0
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TftvRxd6yfXPb9QmpC9Ek4Xlx), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TjA3t8jasdS6FU45qe8qq3bkm)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34Tfu9RCcDNrd0od2gSrz18bwVK), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TjADxsaQorR7muKYbGpDB2I4T)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TfuYnDjxuUHqg5sUjxcs8phPX), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TjAc55WJxl76rUDfnAeXGgsFJ)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34Tfuq39XdUTxNdyI9mMCWQwcUw), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TjAv6E9bmqBn6OjYdzViYItl4)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34Tfv2ESGDjrXiZDUEgzeygV6gL), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TjBCuaMkj5II3gvRyVFQaWeGw)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.fnwvQjceyA
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TjBCuaMkj5II3gvRyVFQaWeGw
+[INFO] Creating session for user_34TjBCuaMkj5II3gvRyVFQaWeGw
+[SUCCESS] Created session: sess_34TjBKMVMbkjFUcb60OG5tr7DhH
+[INFO] Fetching session token for sess_34TjBKMVMbkjFUcb60OG5tr7DhH
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.6zgpVDinxn
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TjA3t8jasdS6FU45qe8qq3bkm), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TjWVgpEMtrj94BbZoOwXsqvch)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TjADxsaQorR7muKYbGpDB2I4T), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TjWmfXzV4LbSo9Ch6bavEXrpL)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TjAc55WJxl76rUDfnAeXGgsFJ), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TjX0Q5acLYiG6BIcHgUd7eovN)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TjAv6E9bmqBn6OjYdzViYItl4), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TjXHAiQp9ptb0j18ua9X17ohk)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TjBCuaMkj5II3gvRyVFQaWeGw), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TjXbglAl3f2s3nnuz1PX50Czk)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.MwSGHW8644
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TjXbglAl3f2s3nnuz1PX50Czk
+[INFO] Creating session for user_34TjXbglAl3f2s3nnuz1PX50Czk
+[SUCCESS] Created session: sess_34TjXhvB48pIFCc3E75ZfEAxcgT
+[INFO] Fetching session token for sess_34TjXhvB48pIFCc3E75ZfEAxcgT
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.5Sw2N9R1lI
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TjWVgpEMtrj94BbZoOwXsqvch), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TqJq1HstVy6G3v2TQPPLYHRbf)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TjWmfXzV4LbSo9Ch6bavEXrpL), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TqK8LBr2ljqbuEwhlComtqCYX)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TjX0Q5acLYiG6BIcHgUd7eovN), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TqKT9UadRJapT7lO1DsZFwseb)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TjXHAiQp9ptb0j18ua9X17ohk), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34TqKiF0TgNQ3hTLDVjoMvoRgGc)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TjXbglAl3f2s3nnuz1PX50Czk), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TqKzEc1A5BGBBs3GUP1ADbRPN)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.JCFXI9g17y
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TqKzEc1A5BGBBs3GUP1ADbRPN
+[INFO] Creating session for user_34TqKzEc1A5BGBBs3GUP1ADbRPN
+[SUCCESS] Created session: sess_34TqLBTscyo73ObyBchVDUynoV1
+[INFO] Fetching session token for sess_34TqLBTscyo73ObyBchVDUynoV1
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.HUBd93gmxN
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TqJq1HstVy6G3v2TQPPLYHRbf), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34Txh4MgRyEbEhZpfnR81wwmy5c)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TqK8LBr2ljqbuEwhlComtqCYX), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34TxhIRimTcoYL5h3nv4Os0f0R6)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TqKT9UadRJapT7lO1DsZFwseb), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TxhZLwIJmC2FyTGydUBSn4dDB)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34TqKiF0TgNQ3hTLDVjoMvoRgGc), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34Txi06a36Tzr84Dat3cWQKK37H)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TqKzEc1A5BGBBs3GUP1ADbRPN), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34Txi9n3yxeqB5DXm8Bcz5p5iME)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.KudgKG6yl6
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34Txi9n3yxeqB5DXm8Bcz5p5iME
+[INFO] Creating session for user_34Txi9n3yxeqB5DXm8Bcz5p5iME
+[SUCCESS] Created session: sess_34TxiJXvrmVOhiMAIca9Y3E4ufq
+[INFO] Fetching session token for sess_34TxiJXvrmVOhiMAIca9Y3E4ufq
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.0tyxN4u6zc
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34Txh4MgRyEbEhZpfnR81wwmy5c), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34TzbL2ZTja1GvtIqpCpvy7Ncm9)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34TxhIRimTcoYL5h3nv4Os0f0R6), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34Tzba04mCpdmXuJKLbRxVOTBnB)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TxhZLwIJmC2FyTGydUBSn4dDB), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34TzboBsobFJceLoK3RYYGGLqtS)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34Txi06a36Tzr84Dat3cWQKK37H), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34Tzc73drpCDWF44lYXsucJkn1d)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34Txi9n3yxeqB5DXm8Bcz5p5iME), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34TzcLvO7nUbyWBAC2USf7RPKfU)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.ta1SNyJbvX
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34TzcLvO7nUbyWBAC2USf7RPKfU
+[INFO] Creating session for user_34TzcLvO7nUbyWBAC2USf7RPKfU
+[SUCCESS] Created session: sess_34TzcOVfzdOO31QegRIAcKtrJdu
+[INFO] Fetching session token for sess_34TzcOVfzdOO31QegRIAcKtrJdu
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.pszbOxR6bW
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34TzbL2ZTja1GvtIqpCpvy7Ncm9), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U0Qf3iAvpc1EMgwHlJQECMz1y)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34Tzba04mCpdmXuJKLbRxVOTBnB), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U0R2gzVD1aDX0phIFpGKACE3U)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34TzboBsobFJceLoK3RYYGGLqtS), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U0RN66OIus0TVT2Sy8ucesIry)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34Tzc73drpCDWF44lYXsucJkn1d), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U0Ra1d2NgzMCeojKzZ8tV4YM9)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34TzcLvO7nUbyWBAC2USf7RPKfU), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U0RuFZpe0ZFbNYAVyxvqSeXHi)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.Tp3cFTBWX1
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U0RuFZpe0ZFbNYAVyxvqSeXHi
+[INFO] Creating session for user_34U0RuFZpe0ZFbNYAVyxvqSeXHi
+[SUCCESS] Created session: sess_34U0RvZohmmBfrtQgEWDOu00ehl
+[INFO] Fetching session token for sess_34U0RvZohmmBfrtQgEWDOu00ehl
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.KR2FEvzDpC
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U0Qf3iAvpc1EMgwHlJQECMz1y), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U1Ft2B0luEpROW5YXVAybw3pz)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U0R2gzVD1aDX0phIFpGKACE3U), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U1G6YVED6ELDTkFlCQXQgT8OV)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U0RN66OIus0TVT2Sy8ucesIry), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U1GOUWiYXxa9hnCzj78xqrLdq)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U0Ra1d2NgzMCeojKzZ8tV4YM9), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U1GbXRO5X4qgbnqVbLbCTvOUW)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U0RuFZpe0ZFbNYAVyxvqSeXHi), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U1GzcN3tTODpsRtVA8UswTGxP)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.m4vCMWwvQv
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U1GzcN3tTODpsRtVA8UswTGxP
+[INFO] Creating session for user_34U1GzcN3tTODpsRtVA8UswTGxP
+[SUCCESS] Created session: sess_34U1H3gZkLhiGmGDr9FVoHADCYs
+[INFO] Fetching session token for sess_34U1H3gZkLhiGmGDr9FVoHADCYs
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.V5xzLFSge5
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U1Ft2B0luEpROW5YXVAybw3pz), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U1ToY95oQPZO7JG15xwg3hRgd)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U1G6YVED6ELDTkFlCQXQgT8OV), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U1U1q54J2DrI1XIrlnyrOvF6u)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U1GOUWiYXxa9hnCzj78xqrLdq), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U1ULNh6EOQLlgRzJNwAJT1NWv)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U1GbXRO5X4qgbnqVbLbCTvOUW), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U1UctBoHzVLY3yFMv2muEKMAg)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U1GzcN3tTODpsRtVA8UswTGxP), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U1UrhEi77DDej4XqBpDSBfdos)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.6Tk2p5BEBX
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U1UrhEi77DDej4XqBpDSBfdos
+[INFO] Creating session for user_34U1UrhEi77DDej4XqBpDSBfdos
+[SUCCESS] Created session: sess_34U1UtxbhIOVvmk0sGZKcJU9fNr
+[INFO] Fetching session token for sess_34U1UtxbhIOVvmk0sGZKcJU9fNr
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.PFDVOXKrLY
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U1ToY95oQPZO7JG15xwg3hRgd), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U1hwsdHi7SHMUdI2NCKwBCXly)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U1U1q54J2DrI1XIrlnyrOvF6u), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U1iCLIEJZ1FqXBIkgiIBBHUjb)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U1ULNh6EOQLlgRzJNwAJT1NWv), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U1iLxjDOv6pUztyNhk76htWxZ)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U1UctBoHzVLY3yFMv2muEKMAg), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U1ibQ7mV3gRXfFHC82IlNSdLU)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U1UrhEi77DDej4XqBpDSBfdos), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U1it88Lz0j1ZhnCmRNhMSI3F2)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.2TihLiboRu
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U1it88Lz0j1ZhnCmRNhMSI3F2
+[INFO] Creating session for user_34U1it88Lz0j1ZhnCmRNhMSI3F2
+[SUCCESS] Created session: sess_34U1iyULgtIlWrWzRIAC87Beqs1
+[INFO] Fetching session token for sess_34U1iyULgtIlWrWzRIAC87Beqs1
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.smcjeEB6Zi
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U1hwsdHi7SHMUdI2NCKwBCXly), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U3oRi9XOe5I6xy1KOJVlhfSLI)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U1iCLIEJZ1FqXBIkgiIBBHUjb), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U3okINFwCYeUiNUzgXprlZccN)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U1iLxjDOv6pUztyNhk76htWxZ), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U3oyL6tSbWVZ2vKGK3WdqCKcQ)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U1ibQ7mV3gRXfFHC82IlNSdLU), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U3pJGJ6685iUjHwR81qaVBx3y)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U1it88Lz0j1ZhnCmRNhMSI3F2), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U3pZ8qb0OilnpGeihhngXRw9G)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.Jwt5W6DKaB
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U3pZ8qb0OilnpGeihhngXRw9G
+[INFO] Creating session for user_34U3pZ8qb0OilnpGeihhngXRw9G
+[SUCCESS] Created session: sess_34U3pa0wtP2a5FzjoE0bYoWT7mv
+[INFO] Fetching session token for sess_34U3pa0wtP2a5FzjoE0bYoWT7mv
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.M4QGyiRuvM
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U3oRi9XOe5I6xy1KOJVlhfSLI), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U41rt2kzAMQKrQAfj1hEsxLAo)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U3okINFwCYeUiNUzgXprlZccN), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U428ZpY4S8FpmoPya7j54pXH9)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U3oyL6tSbWVZ2vKGK3WdqCKcQ), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U42RejdHcpEHH84avlzp0NNC0)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U3pJGJ6685iUjHwR81qaVBx3y), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U42ewz2XD9QLtYbsK5xDZ8KzI)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U3pZ8qb0OilnpGeihhngXRw9G), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U42xOA9T2LZLKEVKNpMCcHqW0)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.fwH16ZgH80
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U42xOA9T2LZLKEVKNpMCcHqW0
+[INFO] Creating session for user_34U42xOA9T2LZLKEVKNpMCcHqW0
+[SUCCESS] Created session: sess_34U432Fbu5PwuXQff0s7uKhk9qT
+[INFO] Fetching session token for sess_34U432Fbu5PwuXQff0s7uKhk9qT
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.iwD2RyqUPn
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U41rt2kzAMQKrQAfj1hEsxLAo), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U46VRPDUW0g3w1gZcqk4rQfXx)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U428ZpY4S8FpmoPya7j54pXH9), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U46tBxpol62wjIkjFPjeuzMQ3)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U42RejdHcpEHH84avlzp0NNC0), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U4787MJWJnVyDC9LKnHhXsRHo)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U42ewz2XD9QLtYbsK5xDZ8KzI), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U47Ug5glEKk6QtkR9ulIaXxEf)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U42xOA9T2LZLKEVKNpMCcHqW0), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U47lzmc8h3EaLw1EILIRV7O3w)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.1Pg8C468Kd
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U47lzmc8h3EaLw1EILIRV7O3w
+[INFO] Creating session for user_34U47lzmc8h3EaLw1EILIRV7O3w
+[SUCCESS] Created session: sess_34U47kk7ouGZkpCeP41D1rLAAzL
+[INFO] Fetching session token for sess_34U47kk7ouGZkpCeP41D1rLAAzL
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.lNej1QjDp4
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U46VRPDUW0g3w1gZcqk4rQfXx), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U9A0mnTUddRSNjNnBO8nj5zTO)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U46tBxpol62wjIkjFPjeuzMQ3), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U9ACV6nCCLu3sStMgSIQHt6S7)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U4787MJWJnVyDC9LKnHhXsRHo), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U9AQ4fJtmfoDefrF1nv3ORUHs)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U47Ug5glEKk6QtkR9ulIaXxEf), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U9Ahkv1RP6axRfw3ckK1AMpYX)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U47lzmc8h3EaLw1EILIRV7O3w), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U9AzWW4SM2FJZW3y3yUkbQvvD)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.BK2heatIqf
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U9AzWW4SM2FJZW3y3yUkbQvvD
+[INFO] Creating session for user_34U9AzWW4SM2FJZW3y3yUkbQvvD
+[SUCCESS] Created session: sess_34U9B6ecjJK1kmIt0yLxZshS6nK
+[INFO] Fetching session token for sess_34U9B6ecjJK1kmIt0yLxZshS6nK
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.exOy2e3vUy
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U9A0mnTUddRSNjNnBO8nj5zTO), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U9gb1KekVuaIonsp26h2AXfwg)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U9ACV6nCCLu3sStMgSIQHt6S7), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U9gvpU3hzUeTCLDQegd2UWFyP)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U9AQ4fJtmfoDefrF1nv3ORUHs), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U9hDJcBsNcwfFc5r0n9PL64Rg)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U9Ahkv1RP6axRfw3ckK1AMpYX), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U9hUQ0NKp0wwujWcEdiMlP0eG)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U9AzWW4SM2FJZW3y3yUkbQvvD), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U9hlPVr59yh58f6TXl7u0uyYO)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.HLa5Mi8Cg3
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U9hlPVr59yh58f6TXl7u0uyYO
+[INFO] Creating session for user_34U9hlPVr59yh58f6TXl7u0uyYO
+[SUCCESS] Created session: sess_34U9hw1xMNkHqFJeDW5YoPMZEtC
+[INFO] Fetching session token for sess_34U9hw1xMNkHqFJeDW5YoPMZEtC
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test
+[DEBUG] About to create temp script for User creation
+[DEBUG] Created temp script: /tmp/tmp.XPDI0x5zak
+[DEBUG] Made temp script executable
+[DEBUG] Starting User creation test
+[DEBUG] Sourced .env.local for User creation
+[DEBUG] About to run command: ./scripts/test-user-creation.sh
+==============================================
+[INFO] Clerk User Creation Test Script
+==============================================
+[INFO] Creating test user: test1@example.com
+[WARN] Existing user found (user_34U9gb1KekVuaIonsp26h2AXfwg), deleting...
+[SUCCESS] Created user test1@example.com (ID: user_34U9nAs1MajkaKldXgJ2uuox7Ho)
+[INFO] Creating test user: test2@example.com
+[WARN] Existing user found (user_34U9gvpU3hzUeTCLDQegd2UWFyP), deleting...
+[SUCCESS] Created user test2@example.com (ID: user_34U9nPrUbkSyyED0p01Bt6HqUQ6)
+[INFO] Creating test user: test3@example.com
+[WARN] Existing user found (user_34U9hDJcBsNcwfFc5r0n9PL64Rg), deleting...
+[SUCCESS] Created user test3@example.com (ID: user_34U9ncJIc3DQOaJ61cY8kTCIFwr)
+[INFO] Creating test user: webhook@example.com
+[WARN] Existing user found (user_34U9hUQ0NKp0wwujWcEdiMlP0eG), deleting...
+[SUCCESS] Created user webhook@example.com (ID: user_34U9o49nBDAIvpUlSd1FjCGZRgS)
+[INFO] Creating test user: automation@example.com
+[WARN] Existing user found (user_34U9hlPVr59yh58f6TXl7u0uyYO), deleting...
+[SUCCESS] Created user automation@example.com (ID: user_34U9oH1yawsbgzPHEWPIVJeZPfd)
+[INFO] All user creation tests completed.
+[DEBUG] Completed User creation test
+[DEBUG] About to create temp script for Session creation
+[DEBUG] Created temp script: /tmp/tmp.k0KlIlVpCE
+[DEBUG] Made temp script executable
+[DEBUG] Starting Session creation test
+[DEBUG] Sourced .env.local for Session creation
+[DEBUG] About to run command: ./scripts/test-session-creation.sh
+==============================================
+[INFO] Clerk Session Token Test Script
+==============================================
+[INFO] Fetching last created user...
+[SUCCESS] Last user: user_34U9oH1yawsbgzPHEWPIVJeZPfd
+[INFO] Creating session for user_34U9oH1yawsbgzPHEWPIVJeZPfd
+[SUCCESS] Created session: sess_34U9oRKsJJsAerJtAlV7wsD0fjz
+[INFO] Fetching session token for sess_34U9oRKsJJsAerJtAlV7wsD0fjz
+[WARN] No active token found — creating a new session token...
+[SUCCESS] Retrieved token: eyJhbGciOiJSUzI1NiIs...
+[INFO] Session creation and token retrieval successful.
+[DEBUG] Completed Session creation test

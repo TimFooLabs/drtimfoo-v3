@@ -1,0 +1,2 @@
+v1,[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+GcGOYm9IidpIEHejIZ9MFx+e4V4jeup7KpKH7lhcdsI=
