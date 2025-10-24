@@ -4,5 +4,5 @@ export default function BlogIndexPage() {
       <h1>Blog</h1>
       <p>TODO</p>
     </section>
-  )
+  );
 }

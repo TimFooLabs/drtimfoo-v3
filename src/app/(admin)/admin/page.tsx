@@ -4,5 +4,5 @@ export default function AdminPage() {
       <h2>Admin Dashboard</h2>
       <p>TODO</p>
     </section>
-  )
+  );
 }

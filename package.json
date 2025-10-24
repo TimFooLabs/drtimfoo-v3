@@ -6,8 +6,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && biome check .",
-    "lint:fix": "next lint --fix && biome check --apply .",
+    "lint": "bunx biome check .",
+    "lint:fix": "bunx biome check --fix .",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "test:unit": "vitest",
@@ -29,7 +29,11 @@
     "storybook:build": "storybook build",
     "prepare": "husky install",
     "convex:dev": "convex dev",
-    "convex:deploy": "convex deploy"
+    "convex:deploy": "convex deploy",
+    "deps:check": "bun outdated",
+    "deps:update": "bun update --interactive",
+    "deps:unused": "bunx depcheck"
+
   },
   "dependencies": {
     "@clerk/nextjs": "^6.34.0",
@@ -71,7 +75,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",
     "@axe-core/react": "^4.11.0",
-    "@biomejs/biome": "2.2.0",
+    "@biomejs/biome": "^2.2.7",
     "@clerk/testing": "^1.0.0",
     "@playwright/test": "^1.56.1",
     "@storybook/addon-a11y": "^9.1.13",
@@ -86,8 +90,9 @@
     "@types/react-dom": "^19",
     "@vitest/ui": "^4.0.1",
     "babel-plugin-react-compiler": "^1.0.0",
-    "cypress": "^13.6.1",
+    "cypress": "^15.5.0",
     "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "playwright": "^1.56.1",
     "storybook": "^9.1.13",
     "tailwindcss": "^4",
@@ -97,6 +102,15 @@
   "trustedDependencies": [
     "@clerk/shared",
     "@sentry/cli",
-    "core-js-pure"
-  ]
+    "core-js-pure",
+    "cypress",
+    "esbuild",
+    "sharp"
+  ],
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "bunx biome check --fix --no-errors-on-unmatched",
+      "git add"
+    ]
+  }
 }

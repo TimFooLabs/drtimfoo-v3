@@ -31,7 +31,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Compliance Gates
+
+- [ ] **User-Centric Design**: Feature prioritizes professional services booking UX
+- [ ] **Real-Time Sync**: Implementation uses Convex for real-time data synchronization
+- [ ] **Secure Auth**: Clerk authentication integrated with proper role-based access
+- [ ] **Test-First**: TDD approach with failing tests written before implementation
+- [ ] **Integration Tests**: Critical user workflows covered by integration tests
+- [ ] **Performance**: Pages load within 2s, meet Core Web Vitals thresholds
+- [ ] **Accessibility**: WCAG 2.1 AA compliance for all UI components
+- [ ] **Security**: Input validation, webhook verification, no sensitive data exposure
 
 ## Project Structure
 

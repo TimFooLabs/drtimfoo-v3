@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import { Navigation } from './navigation'
-import { MobileNav } from './mobile-nav'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { UserButton } from '@clerk/nextjs'
+import { UserButton } from "@clerk/nextjs";
+import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { MobileNav } from "./mobile-nav";
+import { Navigation } from "./navigation";
 
 export function Header() {
   return (
@@ -14,7 +14,7 @@ export function Header() {
           </Link>
           <Navigation className="hidden md:flex" />
         </div>
-        
+
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <UserButton afterSignOutUrl="/" />
@@ -22,5 +22,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

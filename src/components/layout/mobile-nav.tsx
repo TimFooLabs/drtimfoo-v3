@@ -22,5 +22,5 @@ export function MobileNav({ className }: { className?: string }) {
         </svg>
       </button>
     </div>
-  )
+  );
 }

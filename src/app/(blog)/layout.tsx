@@ -1,11 +1,3 @@
-export default function BlogLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <div className="container py-8">
-      {children}
-    </div>
-  )
+export default function BlogLayout({ children }: { children: React.ReactNode }) {
+  return <div className="container py-8">{children}</div>;
 }

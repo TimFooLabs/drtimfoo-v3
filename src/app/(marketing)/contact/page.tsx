@@ -4,5 +4,5 @@ export default function ContactPage() {
       <h1>Contact</h1>
       <p>TODO</p>
     </section>
-  )
+  );
 }

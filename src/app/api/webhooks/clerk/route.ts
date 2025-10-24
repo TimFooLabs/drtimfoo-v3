@@ -1,9 +1,9 @@
-import { headers } from "next/headers";
-import { Webhook } from "svix";
 import type { WebhookEvent } from "@clerk/nextjs/server";
 import { ConvexHttpClient } from "convex/browser";
-import { api } from "../../../../../convex/_generated/api";
+import { headers } from "next/headers";
+import { Webhook } from "svix";
 import { env } from "@/lib/env";
+import { api } from "../../../../../convex/_generated/api";
 
 const client = new ConvexHttpClient(env.NEXT_PUBLIC_CONVEX_URL);
 
@@ -11,9 +11,7 @@ export async function POST(req: Request) {
   const WEBHOOK_SECRET = env.CLERK_WEBHOOK_SIGNING_SECRET;
 
   if (!WEBHOOK_SECRET) {
-    console.error(
-      "[ClerkWebhook] Missing CLERK_WEBHOOK_SIGNING_SECRET env variable",
-    );
+    console.error("[ClerkWebhook] Missing CLERK_WEBHOOK_SIGNING_SECRET env variable");
     // Use a 500 error as this is a server configuration issue.
     return new Response("Internal Server Error: Missing webhook secret", { status: 500 });
   }
@@ -58,12 +56,12 @@ export async function POST(req: Request) {
   // For webhook verification, we need the raw body exactly as sent (including trailing whitespace)
   // Next.js strips trailing newlines when processing JSON, so we need to add it back
   const bodyArrayBuffer = await req.arrayBuffer();
-  let body = Buffer.from(bodyArrayBuffer).toString('utf8');
+  let body = Buffer.from(bodyArrayBuffer).toString("utf8");
 
   // Svix signatures are sensitive to exact whitespace, including trailing newlines
   // If the body doesn't end with a newline, add one (as curl does with -d @file)
-  if (!body.endsWith('\n')) {
-    body += '\n';
+  if (!body.endsWith("\n")) {
+    body += "\n";
   }
 
   console.log("[ClerkWebhook] Attempting verification", {
@@ -73,8 +71,6 @@ export async function POST(req: Request) {
     payloadLength: body.length,
     secretLength: WEBHOOK_SECRET.length,
   });
-
-
 
   // Use string timestamp as Svix library accepts both string and number
   const wh = new Webhook(WEBHOOK_SECRET);
@@ -104,7 +100,10 @@ export async function POST(req: Request) {
         const { id, email_addresses, first_name, last_name } = evt.data;
         // Basic validation to prevent runtime errors
         if (!id || !email_addresses || email_addresses.length === 0) {
-          console.error("[ClerkWebhook] Invalid payload for user event: missing id or email", evt.data);
+          console.error(
+            "[ClerkWebhook] Invalid payload for user event: missing id or email",
+            evt.data,
+          );
           return new Response("Error: Invalid user payload", { status: 400 });
         }
         await client.mutation(api.users.createOrUpdate, {
@@ -116,13 +115,13 @@ export async function POST(req: Request) {
         break;
       }
       case "user.deleted": {
-         // Example of handling another event
-         const { id } = evt.data;
-         if (id) {
-           // await client.mutation(api.users.delete, { clerkId: id });
-           console.log(`[ClerkWebhook] Received user.deleted event for ${id}`);
-         }
-         break;
+        // Example of handling another event
+        const { id } = evt.data;
+        if (id) {
+          // await client.mutation(api.users.delete, { clerkId: id });
+          console.log(`[ClerkWebhook] Received user.deleted event for ${id}`);
+        }
+        break;
       }
       default: {
         console.log(`[ClerkWebhook] Received unhandled event type: ${eventType}`);

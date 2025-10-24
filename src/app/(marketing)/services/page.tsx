@@ -4,5 +4,5 @@ export default function ServicesPage() {
       <h1>Services</h1>
       <p>TODO</p>
     </section>
-  )
+  );
 }

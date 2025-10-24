@@ -22,5 +22,5 @@ export function Navigation({ className }: { className?: string }) {
         </a>
       </div>
     </nav>
-  )
+  );
 }

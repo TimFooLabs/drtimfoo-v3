@@ -1,50 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0 (initial adoption)
+Modified principles: N/A (all new)
+Added sections: Core Principles, Development Standards, Quality Gates, Governance
+Removed sections: N/A
+Templates requiring updates: ✅ plan-template.md (constitution check), ✅ spec-template.md (user stories), ✅ tasks-template.md (independent implementation)
+Follow-up TODOs: N/A
+-->
+
+# DrTimFoo Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. User-Centric Web Application
+Every feature MUST prioritize user experience for professional services booking. Interfaces SHALL be intuitive, responsive, and accessible. All user journeys MUST be independently testable and deliver measurable value.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Real-Time Data Synchronization
+All application state MUST sync in real-time using Convex. Data changes SHALL propagate immediately across all client connections. Offline capabilities MUST be considered but real-time consistency is prioritized.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Secure Authentication & Authorization
+Clerk authentication MUST be integrated for all user access. Role-based access control SHALL enforce proper authorization boundaries. All API endpoints MUST validate authentication and authorize requests before processing.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Test-First Development (NON-NEGOTIABLE)
+TDD is MANDATORY: Tests MUST be written → User stories validated → Tests confirmed to fail → Only then implement features. Red-Green-Refactor cycle SHALL be strictly enforced for all development.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Integration Testing Excellence
+Integration tests MUST cover critical user workflows: Booking creation flow, Authentication lifecycle, Webhook processing, Real-time data synchronization, Cross-component interactions.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Technology Stack Requirements
+Next.js 16 with App Router is MANDATORY. TypeScript SHALL be used for all code. Tailwind CSS MUST be used for styling. Bun is the preferred package manager. Biome SHALL handle all linting and formatting.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Performance & Accessibility
+All pages MUST load within 2 seconds. Components SHALL be accessible (WCAG 2.1 AA). Images MUST be optimized. Core Web Vitals SHALL meet Google thresholds. Real-time updates MUST not block UI responsiveness.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Security Standards
+All API routes MUST validate inputs. Environment variables SHALL be validated with Zod. Clerk webhooks MUST be verified. Convex security rules SHALL enforce data access patterns. No sensitive data SHALL be exposed to clients.
+
+## Quality Gates
+
+### Code Review Requirements
+All code changes MUST pass Biome checks. TypeScript MUST compile without errors. All tests MUST pass. Critical user flows MUST have integration tests. Performance budgets SHALL not be exceeded.
+
+### Deployment Standards
+Features MUST be tested in staging environments. Database schema changes MUST be backward compatible. Webhook endpoints MUST be validated before deployment. Rollback procedures SHALL be documented.
+
+### Documentation Requirements
+All public APIs MUST be documented. User stories MUST include acceptance criteria. Complex business logic SHALL have inline documentation. Deployment procedures SHALL be documented in runbooks.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices. Amendments MUST be proposed as pull requests with clear rationale. Changes require team approval and MUST update all dependent templates. Compliance SHALL be verified in all code reviews. Version follows semantic versioning: MAJOR for principle changes, MINOR for additions, PATCH for clarifications.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-01-24 | **Last Amended**: 2025-01-24

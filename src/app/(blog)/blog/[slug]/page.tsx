@@ -4,5 +4,5 @@ export default function BlogPostPage() {
       <h1>Blog Post</h1>
       <p>TODO</p>
     </section>
-  )
+  );
 }

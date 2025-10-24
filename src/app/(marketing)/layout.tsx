@@ -1,12 +1,8 @@
-import { Header } from '@/components/layout/header'
-import { Footer } from '@/components/layout/footer'
-import { SkipToContent } from '@/components/layout/skip-to-content'
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { SkipToContent } from "@/components/layout/skip-to-content";
 
-export default function MarketingLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function MarketingLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       <SkipToContent />
@@ -16,5 +12,5 @@ export default function MarketingLayout({
       </main>
       <Footer />
     </div>
-  )
+  );
 }
