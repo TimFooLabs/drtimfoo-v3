@@ -45,3 +45,8 @@ convex/*.js
 convex/*.d.ts
 convex/_generated/
 .convex-out/
+
+# ai agents
+.claude
+.kilocode
+.roo
