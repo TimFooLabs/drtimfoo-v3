@@ -38,7 +38,7 @@ Cypress.Commands.add('getConvexUser', (clerkId: string) => {
       'Content-Type': 'application/json'
     }
   }).then((response) => {
-    expect(response.status).to.eq(200)
+    cy.wrap(response.status).should('eq', 200)
     return response.body
   })
 })

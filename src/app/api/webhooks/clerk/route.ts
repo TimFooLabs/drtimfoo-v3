@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
   // Validate timestamp tolerance (5 minutes)
   const svix_timestamp_num = parseInt(svix_timestamp_str, 10);
-  if (isNaN(svix_timestamp_num)) {
+  if (Number.isNaN(svix_timestamp_num)) {
     console.error("[ClerkWebhook] Invalid timestamp format", {
       svix_timestamp_str,
     });

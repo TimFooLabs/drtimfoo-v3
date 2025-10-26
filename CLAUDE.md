@@ -116,3 +116,10 @@ The project uses comprehensive testing:
 - Clerk authentication requires proper webhook setup for user sync
 - All API routes should include proper error handling and validation
 - Component variants use class-variance-authority (CVA) pattern
+
+## Active Technologies
+- TypeScript 5.x with React 19 + Next.js 16 (App Router), Convex (real-time database), Clerk (authentication), shadcn/ui (components), Tailwind CSS v4 (styling), react-hook-form (form handling), zod (validation) (001-booking-components)
+- Convex real-time database with existing bookings schema (001-booking-components)
+
+## Recent Changes
+- 001-booking-components: Added TypeScript 5.x with React 19 + Next.js 16 (App Router), Convex (real-time database), Clerk (authentication), shadcn/ui (components), Tailwind CSS v4 (styling), react-hook-form (form handling), zod (validation)

@@ -5,15 +5,7 @@ export const logger = pino({
   browser: {
     asObject: true,
   },
-  transport:
-    process.env.NODE_ENV !== "production"
-      ? {
-          target: "pino-pretty",
-          options: {
-            colorize: true,
-            translateTime: "SYS:standard",
-            ignore: "pid,hostname",
-          },
-        }
-      : undefined,
+  // Disable worker threads to avoid thread-stream compatibility issues with Bun
+  // This eliminates the "Cannot find module '/ROOT/node_modules/thread-stream/lib/worker.js'" errors
+  transport: undefined,
 });

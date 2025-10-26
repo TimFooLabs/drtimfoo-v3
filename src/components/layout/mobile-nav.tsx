@@ -4,7 +4,7 @@
 export function MobileNav({ className }: { className?: string }) {
   return (
     <div className={className}>
-      <button className="p-2">
+      <button type="button" className="p-2" aria-label="Toggle navigation menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -15,7 +15,10 @@ export function MobileNav({ className }: { className?: string }) {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          role="img"
+          aria-labelledby="mobile-menu-icon"
         >
+          <title id="mobile-menu-icon">Open mobile navigation menu</title>
           <line x1="4" x2="20" y1="12" y2="12" />
           <line x1="4" x2="20" y1="6" y2="6" />
           <line x1="4" x2="20" y1="18" y2="18" />

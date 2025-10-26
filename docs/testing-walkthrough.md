@@ -25,9 +25,13 @@ CLERK_SECRET_KEY=sk_test_...
 CLERK_WEBHOOK_SIGNING_SECRET=whsec_...
 ```
 
+### Environment Setup Notes
+
+> **Development Mode**: The application now includes relaxed environment validation for development. Missing optional variables (like webhook secrets) will show console warnings but won't prevent app startup. See `src/lib/env.ts` for implementation details.
+
 ### Start the local servers
 
-- **Next.js server**: Run `npm run dev` to start on `http://localhost:3000`
+- **Next.js server**: Run `bun dev` to start on `http://localhost:3000`
 - **Convex server**: Run `npx convex dev` to start the Convex backend locally
 
 ### Quick Setup Script

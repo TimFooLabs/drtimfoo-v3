@@ -43,7 +43,7 @@
         "./content/*"
       ]
     },
-      "types": ["cypress", "node"]
+      "types": ["cypress", "node", "vitest/globals"]
   },
   "include": [
     "next-env.d.ts",

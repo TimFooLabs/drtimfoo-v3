@@ -2,40 +2,43 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { SkipToContent } from "@/components/layout/skip-to-content";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
   title: {
-    default: "App Name - Tagline",
-    template: "%s | App Name",
+    default: "Professional Booking System - Enhanced Calendar Experience",
+    template: "%s | Professional Booking System",
   },
-  description: "Your app description for SEO",
-  keywords: ["keyword1", "keyword2", "keyword3"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
+  keywords: ["booking system", "appointment scheduling", "calendar interface", "professional services", "enhanced booking"],
+  authors: [{ name: "Professional Booking Team" }],
+  creator: "Professional Booking Team",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "App Name",
-    title: "App Name - Tagline",
-    description: "Your app description for SEO",
+    siteName: "Professional Booking System",
+    title: "Professional Booking System - Enhanced Calendar Experience",
+    description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "App Name",
+        alt: "Professional Booking System",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Name - Tagline",
-    description: "Your app description for SEO",
+    title: "Professional Booking System - Enhanced Calendar Experience",
+    description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
     images: ["/og-image.jpg"],
-    creator: "@yourtwitterhandle",
+    creator: "@professionalbooking",
   },
   robots: {
     index: true,
@@ -73,7 +76,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${GeistSans.variable} ${GeistMono.variable}`}
     >
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="min-h-screen flex flex-col">
+            <SkipToContent />
+            <Header />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );
