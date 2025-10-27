@@ -79,6 +79,11 @@ Users may benefit from an improved calendar interface for selecting booking date
 - What happens when booking status data is corrupted or missing from the database?
 - How are timezone differences handled for booking confirmation display?
 - What happens when a user has an extremely large number of bookings (hundreds)?
+- How does the system behave when real-time synchronization is temporarily unavailable?
+- What happens when a user's browser timezone changes during an active session?
+- How are booking conflicts resolved when multiple users attempt to book the same time slot?
+- What happens when the booking database reaches maximum capacity?
+- How does the system handle partial data corruption in booking records?
 
 ## Requirements *(mandatory)*
 
@@ -94,6 +99,11 @@ Users may benefit from an improved calendar interface for selecting booking date
 - **FR-008**: System MUST provide appropriate empty states when users have no bookings
 - **FR-009**: Booking status badges MUST be distinguishable for users with color vision deficiencies
 - **FR-010**: Calendar component MUST clearly indicate available vs unavailable booking dates
+- **FR-011**: System MUST automatically detect and display booking dates/times in user's local timezone
+- **FR-012**: Booking history MUST maintain performance for users with 500+ bookings using pagination or virtual scrolling
+- **FR-013**: System MUST handle temporary real-time synchronization failures gracefully with offline capabilities
+- **FR-014**: Booking status changes MUST propagate to all connected user interfaces within 2 seconds
+- **FR-015**: System MUST prevent booking conflicts when multiple users attempt to book the same time slot
 
 ### Key Entities
 
@@ -108,8 +118,11 @@ Users may benefit from an improved calendar interface for selecting booking date
 
 - **SC-001**: Users can view their booking confirmation details within 2 seconds of form submission
 - **SC-002**: Booking history loads completely within 3 seconds for users with up to 100 bookings
-- **SC-003**: 95% of users successfully locate their booking status information on first view attempt
-- **SC-004**: Booking status indicators achieve 4.5:1 contrast ratio for accessibility compliance
-- **SC-005**: Zero booking data inconsistencies across confirmation, history, and status components
-- **SC-006**: 100% of booking components are fully navigable via keyboard alone
-- **SC-007**: Empty states achieve 90% user comprehension rate in usability testing
+- **SC-003**: 95% of users successfully locate their booking status information on first view attempt, measured by usability testing where users are asked to find booking status without guidance and success is confirmed within 10 seconds
+- **SC-004**: Booking status indicators achieve 4.5:1 contrast ratio for accessibility compliance, verified by automated accessibility testing tools
+- **SC-005**: Zero booking data inconsistencies across confirmation, history, and status components, validated by automated data integrity tests across all user booking states
+- **SC-006**: 100% of booking components are fully navigable via keyboard alone, verified by comprehensive keyboard-only testing where all interactive elements can be reached and activated using Tab, Shift+Tab, Enter, and Space keys
+- **SC-007**: Empty states achieve 90% user comprehension rate in usability testing, measured by asking users to describe what action they should take when presented with empty states and confirming they understand the next steps
+- **SC-008**: Booking system automatically detects and displays dates/times in user's local timezone, verified by testing with users in at least 3 different timezone regions
+- **SC-009**: Users with 500+ bookings experience no performance degradation, measured by consistent <3 second load times and smooth scrolling through booking history
+- **SC-010**: Booking status changes are reflected in real-time across all connected user interfaces within 2 seconds, verified by simultaneous testing across multiple devices

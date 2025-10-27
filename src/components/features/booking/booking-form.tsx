@@ -118,7 +118,7 @@ export function BookingForm() {
         notes: values.notes || undefined,
       };
 
-      await createBooking(bookingData);
+      const bookingId = await createBooking(bookingData);
 
       toast({
         title: "Booking Confirmed!",
@@ -126,8 +126,8 @@ export function BookingForm() {
           "Your appointment has been successfully scheduled. You will receive a confirmation email shortly.",
       });
 
-      // Redirect to booking confirmation page
-      router.push("/booking/confirmation");
+      // Redirect to booking confirmation page with booking ID
+      router.push(`/booking/confirmation/${bookingId}`);
     } catch (error) {
       console.error("Booking submission error:", error);
       toast({

@@ -1,8 +1,10 @@
 "use client";
 
+import { CalendarDays, Clock, Shield, Users } from "lucide-react";
 import { BookingForm } from "@/components/features/booking/booking-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CalendarDays, Clock, Users, Shield } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function BookingPage() {
   return (
@@ -15,8 +17,21 @@ export default function BookingPage() {
               Book Your Appointment
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Schedule your chiropractic appointment with Dr Tim Foo. Select your preferred date and time, and we'll confirm your booking instantly.
+              Schedule your chiropractic appointment with Dr Tim Foo. Select your preferred date and
+              time, and we'll confirm your booking instantly.
             </p>
+
+            {/* Returning Users */}
+            <div className="mt-6">
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Already have an appointment?{" "}
+                <Link href="/booking/history">
+                  <Button variant="link" className="p-0 h-auto text-sm">
+                    View your booking history
+                  </Button>
+                </Link>
+              </p>
+            </div>
           </div>
 
           {/* Booking Form */}

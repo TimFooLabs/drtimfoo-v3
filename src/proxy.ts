@@ -7,6 +7,9 @@ const isPublicRoute = createRouteMatcher([
   "/blog(.*)",
   "/contact",
   "/api/webhooks(.*)",
+  "/booking(.*)",
+  "/sign-in(.*)",
+  "/sign-up(.*)",
 ]);
 
 const isIgnoredRoute = createRouteMatcher(["/api/health"]);

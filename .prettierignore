@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.convex-out/
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Generated files
+*.tsbuildinfo
+next-env.d.ts
+convex/_generated/
+
+# Coverage reports
+coverage/
+
+# Environment files
+.env*
+
+# Logs
+*.log
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# AI agents
+.claude/
+.kilocode/
+.roo/

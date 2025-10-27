@@ -1,10 +1,10 @@
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
-import { Providers } from "./providers";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { SkipToContent } from "@/components/layout/skip-to-content";
+import { Providers } from "./providers";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -13,8 +13,15 @@ export const metadata: Metadata = {
     default: "Professional Booking System - Enhanced Calendar Experience",
     template: "%s | Professional Booking System",
   },
-  description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
-  keywords: ["booking system", "appointment scheduling", "calendar interface", "professional services", "enhanced booking"],
+  description:
+    "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
+  keywords: [
+    "booking system",
+    "appointment scheduling",
+    "calendar interface",
+    "professional services",
+    "enhanced booking",
+  ],
   authors: [{ name: "Professional Booking Team" }],
   creator: "Professional Booking Team",
   openGraph: {
@@ -23,7 +30,8 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "Professional Booking System",
     title: "Professional Booking System - Enhanced Calendar Experience",
-    description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
+    description:
+      "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
     images: [
       {
         url: "/og-image.jpg",
@@ -36,7 +44,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Professional Booking System - Enhanced Calendar Experience",
-    description: "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
+    description:
+      "Experience our enhanced booking system with intelligent calendar interface, real-time availability, and seamless appointment scheduling.",
     images: ["/og-image.jpg"],
     creator: "@professionalbooking",
   },

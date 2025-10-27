@@ -1,10 +1,10 @@
 "use client";
 
+import { CalendarIcon, CheckCircleIcon, MessageCircleIcon, UsersIcon } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { CalendarIcon, MessageCircleIcon, UsersIcon, CheckCircleIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -21,8 +21,8 @@ export default function Home() {
                 Hello,
               </h1>
               <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Your journey starts here. Whether you are excited, unsure, concerned, or even confused…
-                Don't worry, I am here to help.
+                Your journey starts here. Whether you are excited, unsure, concerned, or even
+                confused… Don't worry, I am here to help.
               </p>
             </div>
 
@@ -45,7 +45,9 @@ export default function Home() {
             <div className="flex items-center justify-center gap-8 pt-8">
               <div className="flex items-center gap-2">
                 {[1, 2, 3, 4, 5].map((rating) => (
-                  <span key={`rating-${rating}`} className="text-yellow-400 text-2xl">★</span>
+                  <span key={`rating-${rating}`} className="text-yellow-400 text-2xl">
+                    ★
+                  </span>
                 ))}
                 <span className="text-sm text-gray-600 dark:text-gray-400 ml-2">
                   5.0 (17 Facebook Reviews)
@@ -68,8 +70,9 @@ export default function Home() {
               Join Thousands of Proactive Singaporeans Today
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              Many Singaporeans are now increasingly aware of natural therapies. Choosing a health practitioner can be tough.
-              Who can you trust? Are they familiar with your condition? Is it suitable for you? That is why word of mouth is important these days.
+              Many Singaporeans are now increasingly aware of natural therapies. Choosing a health
+              practitioner can be tough. Who can you trust? Are they familiar with your condition?
+              Is it suitable for you? That is why word of mouth is important these days.
             </p>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               Ideally, you are here from a referral or you have heard of me from someone/somewhere.
@@ -149,9 +152,7 @@ export default function Home() {
                   <CheckCircleIcon className="h-6 w-6 text-purple-600 dark:text-purple-400" />
                 </div>
                 <CardTitle>Other Conditions</CardTitle>
-                <CardDescription>
-                  Holistic approach to various health concerns
-                </CardDescription>
+                <CardDescription>Holistic approach to various health concerns</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
@@ -183,35 +184,40 @@ export default function Home() {
               {
                 name: "Jimmy Tan",
                 date: "July 15, 2022",
-                content: "Dr Tim has been helping me with my \"issue\" and I always felt so good after visiting him and got me adjusted.",
-                rating: 5
+                content:
+                  'Dr Tim has been helping me with my "issue" and I always felt so good after visiting him and got me adjusted.',
+                rating: 5,
               },
               {
                 name: "Marvin Ng",
                 date: "August 19, 2019",
-                content: "I felt so relief and comfortable after the treatment. Thank you Dr Timothy for fixing my neck and my back. Well recommended chiropractor in town.",
-                rating: 5
+                content:
+                  "I felt so relief and comfortable after the treatment. Thank you Dr Timothy for fixing my neck and my back. Well recommended chiropractor in town.",
+                rating: 5,
               },
               {
                 name: "YouShen Lim",
                 date: "July 15, 2019",
-                content: "Great attention to details, highly professional and meticulous service - Highly recommended! Immediate results for tendinitis issues.",
-                rating: 5
-              }
+                content:
+                  "Great attention to details, highly professional and meticulous service - Highly recommended! Immediate results for tendinitis issues.",
+                rating: 5,
+              },
             ].map((testimonial) => (
               <Card key={testimonial.name} className="border-0 shadow-lg">
                 <CardContent className="pt-6">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={`${testimonial.name}-star-${i}`} className="text-yellow-400">★</span>
+                      <span key={`${testimonial.name}-star-${i}`} className="text-yellow-400">
+                        ★
+                      </span>
                     ))}
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    "{testimonial.content}"
-                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">"{testimonial.content}"</p>
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
+                      <p className="font-semibold text-gray-900 dark:text-white">
+                        {testimonial.name}
+                      </p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.date}</p>
                     </div>
                     <Badge variant="outline">Facebook Review</Badge>
@@ -222,7 +228,11 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="https://www.facebook.com/drtimfoo/reviews" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.facebook.com/drtimfoo/reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
                 Read More Reviews on Facebook
               </Button>
@@ -242,13 +252,21 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-gray-100">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-gray-100"
+              >
                 Book Appointment Now
                 <CalendarIcon className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600"
+              >
                 <MessageCircleIcon className="mr-2 h-5 w-5" />
                 Have a Question
               </Button>

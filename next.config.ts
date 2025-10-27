@@ -54,12 +54,13 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: `
               default-src 'self';
-              script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net;
+              script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net https://*.clerk.accounts.dev https://*.clerk.com https://va.vercel-scripts.com;
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self' data:;
-              connect-src 'self' https://*.convex.cloud https://*.clerk.accounts.dev;
+              connect-src 'self' https://*.convex.cloud https://*.clerk.accounts.dev https://*.clerk.com https://clerk-telemetry.com;
               frame-src 'self' https://*.clerk.accounts.dev;
+              worker-src 'self' blob:;
             `.replace(/\s+/g, ' ').trim(),
           },
         ],
